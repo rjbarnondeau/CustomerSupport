@@ -8,15 +8,18 @@ public class Ticket {
 
     private String body;
 
+    private Attachment attachment;
+
     public Ticket(){
         super();
     }
 
 
-    public Ticket(String customerName, String subject, String body){
+    public Ticket(String customerName, String subject, String body,Attachment attachment){
         this.customerName = customerName;
         this.subject = subject;
         this.body = body;
+        this.attachment = attachment;
     }
 
 
@@ -32,6 +35,10 @@ public class Ticket {
         return body;
     }
 
+    public Attachment getAttachment() {
+        return attachment;
+    }
+
     public void setCustomerName(String customerName) {
         this.customerName = customerName;
     }
@@ -42,6 +49,10 @@ public class Ticket {
 
     public void setBody(String body) {
         this.body = body;
+    }
+
+    public void setAttachment(Attachment attachment) {
+        this.attachment = attachment;
     }
 
 }
