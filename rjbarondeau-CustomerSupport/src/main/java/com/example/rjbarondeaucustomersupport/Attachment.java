@@ -1,20 +1,25 @@
 package com.example.rjbarondeaucustomersupport;
 
-import jakarta.ws.rs.ApplicationPath;
-import jakarta.ws.rs.core.Application;
+import javax.print.DocFlavor;
+import java.io.ByteArrayInputStream;
 
+public class Attachment {
+    private String name;
+    private byte[] contents;
 
-Str name;
+    public String getName() {
+        return name;
+    }
 
+    public byte[] getContents() {
+        return contents;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
-
-
-
-
-
-
-
-
-
-
+    public void setContents(byte[] contents) {
+        this.contents = contents;
+    }
+}
