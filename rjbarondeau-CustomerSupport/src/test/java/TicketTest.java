@@ -6,7 +6,9 @@ import org.junit.jupiter.api.Test;
 
 public class TicketTest {
 
-    Ticket testTicket = new Ticket("Name","Subject","Body", "d");
+
+    private Attachment testFile;
+    Ticket testTicket = new Ticket("Name","Subject","Body", testFile);
 
 
 
